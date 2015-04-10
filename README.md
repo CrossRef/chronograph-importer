@@ -7,7 +7,7 @@ The DOI Chronograph collects temporal data about DOIs. This is an experimental t
 * table in question
 * initial select clause (can be for all DOIs or for a subset of your choosing)
 * the name of the column that contains the DOI
-* the mapping of Chronograph types to database row names
+* the mapping of Chronograph types to database row names. This should be a dictionary of the type (specified below) to the name of your row. You can have multiple entries.
 * the URL of the API
 
 When you run it, it will query your MySQL table for DOIs, send each one to the API, then update your table in the specified columns with the resulting data.
